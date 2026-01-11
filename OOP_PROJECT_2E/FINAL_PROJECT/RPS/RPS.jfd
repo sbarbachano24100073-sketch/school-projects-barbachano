@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 148
+				"y": 148
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblcomputer"
+				"text": "Computer:"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 20 )
+				"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 315
+				"y": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCompScore"
+				"text": "0"
+				"foreground": &Color1 new java.awt.Color( 255, 255, 255, 255 )
+				"font": &Font1 new java.awt.Font( "Segoe UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 415
+				"y": 60
+				"width": 55
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblplayer"
+				"text": "Player:"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 27
+				"x": 350
+				"y": 90
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPlayerScore"
+				"text": "0"
+				"foreground": #Color1
+				"font": #Font1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 27
+				"x": 415
+				"y": 90
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnRock"
+				"text": "Rock"
+				"font": &Font2 new java.awt.Font( "Segoe UI", 0, 26 )
+				"foreground": &Color2 new java.awt.Color( 255, 255, 255, 255 )
+				"background": &Color3 new java.awt.Color( 51, 51, 51, 255 )
+				"opaque": true
+				"focusable": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnRockMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 205
+				"width": 125
+				"height": 44
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnPaper"
+				"text": "Paper"
+				"font": #Font2
+				"foreground": #Color2
+				"background": #Color3
+				"opaque": true
+				"focusable": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnPaperMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 44
+				"x": 195
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnScissor"
+				"text": "Scissor"
+				"font": #Font2
+				"foreground": #Color2
+				"background": #Color3
+				"opaque": true
+				"focusable": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnScissorMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 44
+				"x": 340
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblResult"
+				"text": "Result:"
+				"font": #Font0
+				"foreground": #Color0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 30
+				"x": 40
+				"y": 310
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblResultholder"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"opaque": true
+				"focusable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 30
+				"x": 105
+				"y": 310
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBG"
+				"background": new java.awt.Color( 51, 51, 51, 255 )
+				"opaque": true
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 515
+				"height": 390
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 515, 420 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
